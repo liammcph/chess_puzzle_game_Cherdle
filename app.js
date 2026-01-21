@@ -7,14 +7,13 @@ let winner;
 let attempt_number;
 let user_input;
 let game_over
-let current_position
 /*------------------------ Cached Element References ------------------------*/
 const messageEl = document.querySelector('#message');
 const guessesEl = document.querySelector('#guesses');                 
 const guessRowEls = document.querySelectorAll('.guess-row');          
 const moveInputEls = document.querySelectorAll('input.move'); 
 const submitBtnEl = document.querySelector('#submit');
-const keyboardEl = document.querySelectorAll('#keyboard .key');
+const keyboardEl = document.querySelector('#keyboard');
 const resetBtnEl = document.querySelector('#reset');
 /*-------------------------------- Functions --------------------------------*/
 function init(){
@@ -22,7 +21,6 @@ function init(){
     winner = false
     attempt_number = 0
     game_over = false
-    current_position = 0
     render();
 }
 
@@ -33,9 +31,8 @@ function render(){
 } 
 
 function updateGuessPanel(){
-   user_input.forEach((element, index) => {
-    moveInputEls[index].value = element;
-   })
+   user_input.forEach((element, index) => {const squareEl = squareEls[index];
+    squareEl.textContent = element;})
 }
 
 function updateMessage(){
@@ -51,13 +48,8 @@ function updateMessage(){
 
 }
 
-function handleKeyBoardClick(event){
-    if (current_position < 5) {
-        user_input[current_position] = event.target.dataset.key
-        current_position++
-        render()
-    }
-}
+ function handleKeyBoardClick(event){
+ }
 
 
 
