@@ -3,8 +3,8 @@
 <head>
   <meta charset="UTF-8">
   <meta name="viewport" content="width=device-width, initial-scale=1.0">
-  <link rel="stylesheet" href=".style.css">
-  <script defer src=".app.js"></script>
+  <link rel="stylesheet" href="./style.css">
+  <script defer src="./app.js"></script>
   <title>Cherdle</title>
 </head>
 <body>
@@ -16,57 +16,13 @@
     <section class="position-panel">
       <img id="position-image" src="./puzzle2start.png" alt="Chess puzzle position">
     </section>
-
-    <section class="guess-panel">
-
-      <section class="guesses" id="guesses">
-        <div class="guess-row" data-row="0" readonly>
-          <input class="move" data-col="0" readonly>
-          <input class="move" data-col="1"readonly>
-          <input class="move" data-col="2" readonly>
-          <input class="move" data-col="3" readonly>
-          <input class="move" data-col="4" readonly>
-        </div>
-
-        <div class="guess-row" data-row="0" readonly>
-          <input class="move" data-col="0" readonly>
-          <input class="move" data-col="1"readonly>
-          <input class="move" data-col="2" readonly>
-          <input class="move" data-col="3" readonly>
-          <input class="move" data-col="4" readonly>
-        </div>
-
-       <div class="guess-row" data-row="0" readonly>
-          <input class="move" data-col="0" readonly>
-          <input class="move" data-col="1"readonly>
-          <input class="move" data-col="2" readonly>
-          <input class="move" data-col="3" readonly>
-          <input class="move" data-col="4" readonly>
-        </div>
-
-       <div class="guess-row" data-row="0" readonly>
-          <input class="move" data-col="0" readonly>
-          <input class="move" data-col="1"readonly>
-          <input class="move" data-col="2" readonly>
-          <input class="move" data-col="3" readonly>
-          <input class="move" data-col="4" readonly>
-        </div>
-
-        <div class="guess-row" data-row="0" readonly>
-          <input class="move" data-col="0" readonly>
-          <input class="move" data-col="1"readonly>
-          <input class="move" data-col="2" readonly>
-          <input class="move" data-col="3" readonly>
-          <input class="move" data-col="4" readonly>
-        </div>
-
-        <div class="guess-row" data-row="0" readonly>
-          <input class="move" data-col="0" readonly>
-          <input class="move" data-col="1"readonly>
-          <input class="move" data-col="2" readonly>
-          <input class="move" data-col="3" readonly>
-          <input class="move" data-col="4" readonly>
-        </div>
+      
+    <section class="guesses">
+      <h2 id="input1"></h2>
+      <h2 id="input2"></h2>
+      <h2 id="input3"></h2>
+      <h2 id="input4"></h2>
+      <h2 id="input5"></h2>
       </section>
 
       <button id="submit">Submit</button>
@@ -106,7 +62,7 @@
           <button class="key" data-key="8">8</button>
         </section>
       </section>
-    </section>
+    
 
 
   <section id="how-to-play">

@@ -1,0 +1,13 @@
+
+
+.position-panel {
+  display: flex;
+  justify-content: center;
+}
+
+#position-image {
+  max-width: 400px;
+  max-height: 400px;
+  width: 100%;
+  object-fit: contain;
+}
