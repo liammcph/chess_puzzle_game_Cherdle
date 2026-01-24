@@ -1,7 +1,10 @@
 
 ./cherdlescreenshot.png
 
+
+
 # Cherdle
+https://liammcph.github.io/chess_puzzle_game_Cherdle/
 
 A chess puzzle game in Wordle format where your move inputs are highlighted in orange/green to indicate correctness.
 
