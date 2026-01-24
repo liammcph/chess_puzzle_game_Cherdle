@@ -10,6 +10,7 @@
 <body>
   <h1>Cherdle</h1>
   <h2 id="message">Message</h2>
+  <h2 id="input-message">Input-message</h2>
   <h3>Mate in 3</h3>
 
 
@@ -38,6 +39,7 @@
           <button class="key" data-key="B">♗</button>
           <button class="key" data-key="N">♘</button>
           <button class="key" data-key="P">♙</button>
+          <button id="backspace" data-key="backspace">backspace</button>
         </section>
 
         <section class="key-group files" aria-label="Files">
@@ -67,7 +69,14 @@
 
   <section id="how-to-play">
     <h2>How to Play</h2>
-    <p>need to add how to play</p>
+    <p>Solve the checkmate puzzle in 5 attempts or less!</p>
+    <ul>
+      <li>Enter 5 moves, white moves first(puzzle is a checkmate in 3 white moves and 2 black moves)</li>
+      <li>The move format is Piece → Column → Row for example ♖b1 = move Rook to the square b1</li>
+      <li>Click a piece (♔♕♖♗♘♙), then a column (a-h), then a row (1-8). Once all 5 moves are entered, click Submit
+      <li><span style="color: green;">Green</span> = correct sequence, <span style="color: orange;">Orange</span> = part of sequence is correct but not all</li>
+      <li>more on how to play <a href="https://www.chess.com/learn-how-to-play-chess">chess</a> </li> 
+    </ul>
   </section>
 </body>
 </html>
